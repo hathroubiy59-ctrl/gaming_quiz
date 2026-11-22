@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ultimate Gaming Quiz – Liberty City Edition</title>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<div id="sky"></div>
+<main>
+<section id="home" class="scr on">
+<h1>Ultimate<b>Gaming Quiz</b></h1>
+<div class="sub">How much do you really know about video games?</div>
+<p class="intro">Welcome, player. Ten seconds per question, one shot per answer. From GTA to Elden Ring, Minecraft to Valorant — prove you are a real gamer.</p>
+<div class="modes" id="modes"></div>
+<div class="row"><button class="btn" id="start">Start Quiz</button></div>
+<div class="tools"><button id="mus">Music: off</button><button id="lang">العربية</button><label>Load GTA IV music<input id="file" type="file" accept="audio/*" hidden></label></div>
+</section>
+<section id="game" class="scr">
+<div class="hud"><div>Question <b id="qn">1/15</b></div><div id="cat">—</div><div>Score <b id="sc">0</b></div></div>
+<div class="timer"><div id="tnum">10</div><div class="bar"><div id="bar"></div></div></div>
+<div class="q" id="q"></div>
+<div class="ans" id="ans"></div>
+</section>
+<section id="end" class="scr">
+<div class="sub">Round complete</div>
+<div class="rank" id="rk"></div>
+<p class="intro" id="msg"></p>
+<div class="stats" id="stats"></div>
+<div class="row"><button class="btn" id="again">Play Again</button><button class="btn g" id="homeb">Return to Home</button></div>
+</section>
+</main>
+<script src="script.js"></script></body></html>
